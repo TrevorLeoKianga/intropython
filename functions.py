@@ -1,4 +1,5 @@
 import email
+import math
 
 
 def motto():
@@ -69,11 +70,15 @@ gradingsystem(97)
 
 
 def login(email, password):
-    if user@example.com == email:
-        print("correct")
-    elif user123 == password:
+    if email == "user@example.com" and password == "user123":
         print("correct")
     else:
         print("incorrect")
 
-login(email, password)
+login("user@example.com", "user123" )
+
+def areaOfACircle(radius):
+    area = math.pi * pow(radius, 2)
+    return area
+
+print(areaOfACircle(7))
